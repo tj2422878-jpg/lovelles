@@ -1,0 +1,1726 @@
+/* =====================================================
+   LOVELLES
+   JASA DESAIN GRAFIS
+   IVORY - GREY - BROWN
+   ===================================================== */
+
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f1ea;
+    color: #373532;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+
+/* =====================================================
+   HEADER / NAVBAR
+   ===================================================== */
+
+.navbar {
+    width: 100%;
+    height: 92px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* WARNA HEADER DIBUAT JELAS BERBEDA */
+    background: #d8d3ca;
+
+    border-bottom: 1px solid #bcb6ac;
+
+    box-shadow: 0 4px 15px rgba(55, 50, 45, 0.12);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 999;
+}
+
+
+/* ================= LOGO HEADER ================= */
+
+.logo {
+    font-family: "Playfair Display", serif;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    color: #4d4037;
+
+    white-space: nowrap;
+}
+
+
+/* ================= MENU HEADER ================= */
+
+.navbar nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 42px;
+}
+
+.navbar nav a {
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #514d47;
+
+    transition: all 0.3s ease;
+
+    position: relative;
+}
+
+.navbar nav a:hover {
+    color: #292724;
+}
+
+.navbar nav a.active {
+    color: #292724;
+
+    font-weight: 700;
+}
+
+
+/* GARIS MENU AKTIF */
+
+.navbar nav a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: -10px;
+
+    height: 2px;
+
+    background: #665549;
+}
+
+
+/* ================= BUTTON HEADER ================= */
+
+.nav-button {
+    padding: 14px 24px;
+
+    background: #f4f1ea;
+
+    border: 1px solid #71685f;
+
+    color: #403b36;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background: #403b36;
+
+    color: #f4f1ea;
+
+    border-color: #403b36;
+}
+
+
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+.section {
+    padding: 120px 7%;
+}
+
+.eyebrow {
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: #817a72;
+}
+
+.section-label {
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #817a72;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #d2cec5;
+}
+
+.large-title {
+    font-family: "Playfair Display", serif;
+
+    font-size: 58px;
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+    letter-spacing: -1px;
+}
+
+.large-title i {
+    color: #80776f;
+}
+
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+.hero {
+    min-height: 690px;
+
+    padding: 85px 7%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.85fr;
+
+    gap: 90px;
+
+    align-items: center;
+}
+
+
+/* HERO TEXT */
+
+.hero-text h1 {
+    margin-top: 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(54px, 6vw, 82px);
+
+    line-height: 1.02;
+
+    font-weight: 500;
+
+    letter-spacing: -2px;
+}
+
+.hero-text h1 i {
+    color: #81776f;
+}
+
+.hero-description {
+    max-width: 570px;
+
+    margin-top: 32px;
+
+    color: #68645e;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* HERO BUTTON */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 38px;
+}
+
+.button-dark,
+.button-outline {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 24px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.button-dark {
+    background: #373532;
+
+    color: #f4f1ea;
+}
+
+.button-dark:hover {
+    background: #514d48;
+}
+
+.button-outline {
+    border: 1px solid #aaa49b;
+
+    background: transparent;
+}
+
+.button-outline:hover {
+    background: #e4e0d7;
+}
+
+
+/* =====================================================
+   HERO VISUAL
+   ===================================================== */
+
+.hero-visual {
+    height: 500px;
+
+    background: #dcd7ce;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+
+    border: 1px solid #b7b0a6;
+
+    border-radius: 50%;
+}
+
+.circle-one {
+    width: 430px;
+    height: 430px;
+}
+
+.circle-two {
+    width: 315px;
+    height: 315px;
+}
+
+
+/* VISUAL CARD */
+
+.visual-card {
+    width: 285px;
+    height: 360px;
+
+    padding: 28px;
+
+    background: #f7f3eb;
+
+    box-shadow:
+        0 30px 70px rgba(50, 45, 40, 0.17);
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    animation: floating 4s ease-in-out infinite;
+}
+
+.visual-top,
+.visual-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.visual-center small {
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    color: #817a72;
+}
+
+.visual-center h2 {
+    margin-top: 13px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 45px;
+
+    line-height: 1;
+
+    font-weight: 500;
+}
+
+.visual-line {
+    width: 50px;
+
+    height: 1px;
+
+    background: #817a72;
+
+    margin: 22px 0;
+}
+
+.visual-center p {
+    font-size: 11px;
+
+    color: #817a72;
+}
+
+.visual-bottom {
+    color: #817a72;
+}
+
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+/* =====================================================
+   TWO COLUMN
+   ===================================================== */
+
+.two-column {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 110px;
+
+    padding-top: 70px;
+}
+
+
+/* CONTENT */
+
+.content-text {
+    max-width: 570px;
+
+    color: #66625c;
+
+    font-size: 16px;
+
+    line-height: 1.85;
+}
+
+.content-text p + p {
+    margin-top: 22px;
+}
+
+
+/* TEXT LINK */
+
+.text-link {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #77736c;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   TARGET KONSUMEN
+   ===================================================== */
+
+.target-section {
+    background: #ddd8cf;
+}
+
+.section-heading {
+    padding: 65px 0 50px;
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.section-heading > p {
+    max-width: 380px;
+
+    color: #6c6861;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* TARGET GRID */
+
+.target-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    border-top: 1px solid #bcb6ac;
+
+    border-left: 1px solid #bcb6ac;
+}
+
+.target-card {
+    min-height: 320px;
+
+    padding: 28px;
+
+    border-right: 1px solid #bcb6ac;
+
+    border-bottom: 1px solid #bcb6ac;
+
+    transition: 0.35s;
+}
+
+.target-card:hover {
+    background: #f0ece4;
+}
+
+.target-card > span {
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #827b73;
+}
+
+.target-card h3 {
+    margin-top: 65px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 24px;
+
+    line-height: 1.25;
+
+    font-weight: 500;
+}
+
+.target-card p {
+    margin-top: 15px;
+
+    color: #706b64;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+}
+
+
+/* =====================================================
+   KEUNGGULAN
+   ===================================================== */
+
+.advantage-list {
+    border-top: 1px solid #d0cbc2;
+}
+
+.advantage-item {
+    display: grid;
+
+    grid-template-columns: 45px 1fr;
+
+    gap: 20px;
+
+    padding: 27px 0;
+
+    border-bottom: 1px solid #d0cbc2;
+}
+
+.advantage-item > span {
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #827b73;
+}
+
+.advantage-item h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 24px;
+
+    font-weight: 500;
+}
+
+.advantage-item p {
+    margin-top: 8px;
+
+    color: #706b64;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+}
+
+
+/* =====================================================
+   CTA
+   ===================================================== */
+
+.cta {
+    padding: 120px 7%;
+
+    text-align: center;
+
+    background: #373532;
+
+    color: #f4f1ea;
+}
+
+.cta h2 {
+    margin-top: 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 6vw, 72px);
+
+    line-height: 1;
+
+    font-weight: 500;
+}
+
+.cta h2 i {
+    color: #b5aea5;
+}
+
+.cta > p:not(.eyebrow) {
+    max-width: 550px;
+
+    margin: 28px auto;
+
+    color: #c1bbb2;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+.cta-button {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 15px 28px;
+
+    border: 1px solid #aaa49b;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #f4f1ea;
+
+    color: #373532;
+}
+
+
+/* =====================================================
+   PAGE HEADER
+   ===================================================== */
+
+.page-header {
+    padding: 120px 7% 105px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #d1ccc3;
+}
+
+.page-header h1 {
+    margin-top: 22px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(58px, 7vw, 92px);
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    letter-spacing: -2px;
+}
+
+.page-header h1 i {
+    color: #81776f;
+}
+
+.page-header > p:last-child {
+    max-width: 600px;
+
+    margin: 30px auto 0;
+
+    color: #706b64;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   KATALOG
+   ===================================================== */
+
+.catalog-section {
+    padding: 90px 7% 120px;
+}
+
+.catalog-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+
+/* CARD */
+
+.catalog-card {
+    min-height: 430px;
+
+    padding: 32px;
+
+    background: #dfdad1;
+
+    border: 1px solid #cbc5bc;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: 0.4s;
+}
+
+.catalog-card:hover {
+    background: #373532;
+
+    color: #f4f1ea;
+
+    transform: translateY(-6px);
+}
+
+
+/* TOP */
+
+.catalog-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #827b73;
+}
+
+
+/* CONTENT */
+
+.catalog-content {
+    margin-top: auto;
+}
+
+.catalog-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+
+    line-height: 1.1;
+
+    font-weight: 500;
+}
+
+.catalog-content p {
+    max-width: 500px;
+
+    margin-top: 15px;
+
+    color: #6e6962;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+.catalog-card:hover .catalog-content p {
+    color: #c1bbb2;
+}
+
+
+/* PRICE */
+
+.catalog-price {
+    margin-top: 28px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #beb8ae;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.catalog-price span {
+    font-size: 12px;
+
+    color: #827b73;
+}
+
+.catalog-price strong {
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   PRICE NOTE
+   ===================================================== */
+
+.price-note {
+    padding: 80px 7%;
+
+    background: #d9d4ca;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+.price-note h2 {
+    margin-top: 18px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 46px;
+
+    line-height: 1.1;
+
+    font-weight: 500;
+}
+
+.price-note h2 i {
+    color: #81776f;
+}
+
+.price-note > p {
+    color: #68635c;
+
+    font-size: 16px;
+
+    line-height: 1.85;
+}
+
+
+/* =====================================================
+   CONTACT
+   ===================================================== */
+
+.contact-section {
+    padding-bottom: 120px;
+}
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    padding-top: 70px;
+}
+
+
+/* CONTACT INFO */
+
+.contact-description {
+    max-width: 550px;
+
+    margin-top: 28px;
+
+    color: #69645d;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* INFO LIST */
+
+.info-list {
+    margin-top: 45px;
+
+    border-top: 1px solid #d0cbc2;
+}
+
+.info-item {
+    padding: 20px 0;
+
+    border-bottom: 1px solid #d0cbc2;
+}
+
+.info-item span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #817a72;
+}
+
+.info-item a,
+.info-item p {
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #4f4b45;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   ORDER FORM
+   ===================================================== */
+
+.order-box {
+    padding: 42px;
+
+    background: #ddd8cf;
+
+    border: 1px solid #c7c1b7;
+}
+
+.form-label {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #817a72;
+}
+
+.order-box h3 {
+    margin-top: 10px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+
+    line-height: 1.2;
+
+    font-weight: 500;
+}
+
+
+/* FORM */
+
+#contactForm {
+    margin-top: 32px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #5e5952;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    background: #f4f1ea;
+
+    border: 1px solid #c3bdb3;
+
+    outline: none;
+
+    color: #373532;
+
+    font-size: 15px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9b958c;
+}
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 140px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #756e66;
+}
+
+
+/* SUBMIT */
+
+#contactForm button {
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    background: #373532;
+
+    color: #f4f1ea;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+#contactForm button:hover {
+    background: #504c47;
+}
+
+
+/* =====================================================
+   PROCESS
+   ===================================================== */
+
+.process-section {
+    background: #ddd8cf;
+}
+
+.process-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    border-top: 1px solid #bcb6ac;
+
+    border-left: 1px solid #bcb6ac;
+}
+
+.process-card {
+    min-height: 330px;
+
+    padding: 28px;
+
+    border-right: 1px solid #bcb6ac;
+
+    border-bottom: 1px solid #bcb6ac;
+
+    transition: 0.3s;
+}
+
+.process-card:hover {
+    background: #f1eee7;
+}
+
+.process-card > span {
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #817a72;
+}
+
+.process-card h3 {
+    margin-top: 65px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 26px;
+
+    font-weight: 500;
+}
+
+.process-card p {
+    margin-top: 15px;
+
+    color: #6d6861;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    padding: 55px 7% 30px;
+
+    background: #2f2e2b;
+
+    color: #f4f1ea;
+}
+
+.footer-main {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: start;
+}
+
+.footer-logo {
+    font-family: "Playfair Display", serif;
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+.footer-main p {
+    margin-top: 7px;
+
+    color: #aaa49b;
+
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 28px;
+}
+
+.footer-links a {
+    color: #aaa49b;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    color: #f4f1ea;
+}
+
+.footer-bottom {
+    margin-top: 45px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #484641;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.footer-bottom span {
+    color: #817b73;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 1100px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-visual {
+        max-width: 650px;
+
+        width: 100%;
+
+        margin: auto;
+    }
+
+    .target-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 750px) {
+
+    body {
+        font-size: 15px;
+    }
+
+
+    /* HEADER MOBILE */
+
+    .navbar {
+        height: 78px;
+
+        padding: 0 5%;
+
+        background: #d8d3ca;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .logo {
+        font-size: 23px;
+
+        letter-spacing: 4px;
+    }
+
+
+    /* SECTION */
+
+    .section {
+        padding: 85px 5%;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 65px 5% 85px;
+
+        display: block;
+    }
+
+    .hero-text h1 {
+        font-size: 50px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .button-dark,
+    .button-outline {
+        width: 100%;
+    }
+
+    .hero-visual {
+        height: 430px;
+
+        margin-top: 60px;
+    }
+
+    .visual-card {
+        width: 245px;
+
+        height: 315px;
+    }
+
+
+    /* TITLES */
+
+    .large-title {
+        font-size: 43px;
+    }
+
+
+    /* TWO COLUMN */
+
+    .two-column {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    /* HEADING */
+
+    .section-heading {
+        display: block;
+
+        padding-top: 50px;
+    }
+
+    .section-heading > p {
+        margin-top: 25px;
+
+        font-size: 15px;
+    }
+
+
+    /* TARGET */
+
+    .target-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .target-card {
+        min-height: 250px;
+    }
+
+    .target-card h3 {
+        margin-top: 45px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 85px 5%;
+    }
+
+    .page-header h1 {
+        font-size: 58px;
+    }
+
+
+    /* CATALOG */
+
+    .catalog-section {
+        padding: 65px 5% 85px;
+    }
+
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-card {
+        min-height: 390px;
+    }
+
+    .catalog-content h2 {
+        font-size: 32px;
+    }
+
+    .catalog-content p {
+        font-size: 15px;
+    }
+
+
+    /* PRICE */
+
+    .price-note {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 65px 5%;
+    }
+
+
+    /* CONTACT */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .order-box {
+        padding: 28px 22px;
+    }
+
+
+    /* PROCESS */
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* CTA */
+
+    .cta {
+        padding: 90px 5%;
+    }
+
+    .cta h2 {
+        font-size: 46px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 45px 5% 25px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom {
+        display: block;
+    }
+
+    .footer-bottom span {
+        display: block;
+    }
+
+    .footer-bottom span + span {
+        margin-top: 7px;
+    }
+
+}
+
+/* =====================================================
+   CONTOH HASIL / PORTFOLIO
+   ===================================================== */
+
+   .portfolio-section {
+    padding: 90px 7% 120px;
+}
+
+
+/* ================= KOLOM ================= */
+
+.portfolio-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+/* ================= KARTU ================= */
+
+.portfolio-card {
+    background: #e5e0d7;
+
+    border: 1px solid #cbc5bc;
+
+    transition: 0.3s ease;
+
+    overflow: hidden;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 30px rgba(55, 50, 45, 0.10);
+}
+
+
+/* ================= TEMPAT GAMBAR ================= */
+
+.portfolio-image {
+    width: 100%;
+
+    height: 330px;
+
+    background: #d8d3ca;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* GAMBAR */
+
+.portfolio-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s ease;
+}
+
+
+/* EFEK GAMBAR */
+
+.portfolio-card:hover .portfolio-image img {
+    transform: scale(1.03);
+}
+
+
+/* ================= TEKS ================= */
+
+.portfolio-content {
+    padding: 25px 26px 28px;
+}
+
+
+.portfolio-content span {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #817a72;
+}
+
+
+.portfolio-content h2 {
+    margin-top: 9px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 27px;
+
+    line-height: 1.2;
+
+    font-weight: 500;
+
+    color: #403c37;
+}
+
+
+.portfolio-content p {
+    margin-top: 9px;
+
+    color: #6d6861;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 950px) {
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   HP
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .portfolio-section {
+        padding: 65px 5% 85px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-image {
+        height: 350px;
+    }
+/* =========================================
+   KONTAK - POSISI DI TENGAH
+   ========================================= */
+
+   .contact-section {
+    width: 100%;
+}
+
+.contact-section .contact-grid {
+    display: block;
+    width: 100%;
+}
+
+.contact-section .contact-info {
+    width: 700px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section .contact-info h1,
+.contact-section .contact-info h2,
+.contact-section .contact-info p {
+    text-align: center;
+}
+
+.contact-section .contact-description {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.contact-section .info-list {
+    width: 100%;
+}
+
+.contact-section .info-item {
+    text-align: center;
+}
+
+.contact-section .info-item span,
+.contact-section .info-item a,
+.contact-section .info-item p {
+    text-align: center;
+}
+}
+.contact-section .contact-grid {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+}
+
+.contact-section .contact-info {
+    width: 700px !important;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
